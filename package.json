@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-base-smskmin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Calculate the minimum value of a single-precision floating-point strided array according to a mask.",
   "license": "Apache-2.0",
   "author": {
