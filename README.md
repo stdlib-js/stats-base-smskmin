@@ -59,7 +59,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.smskmin;
+})();
 })();
 </script>
 ```
@@ -189,6 +191,7 @@ var v = smskmin.ndarray( N, x, 2, 1, mask, 2, 1 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-smskmin@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var mask;
 var x;
@@ -210,6 +213,7 @@ console.log( mask );
 var v = smskmin( x.length, x, 1, mask, 1 );
 console.log( v );
 
+})();
 })();
 </script>
 </body>
@@ -308,25 +312,25 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-base-smskmin/main/LICENSE
 
-[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32/tree/umd
+[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32/tree/umd/tree/umd
 
-[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8/tree/umd
+[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8/tree/umd/tree/umd
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 <!-- <related-links> -->
 
-[@stdlib/stats/base/dmskmin]: https://github.com/stdlib-js/stats-base-dmskmin/tree/umd
+[@stdlib/stats/base/dmskmin]: https://github.com/stdlib-js/stats-base-dmskmin/tree/umd/tree/umd
 
-[@stdlib/stats/base/mskmin]: https://github.com/stdlib-js/stats-base-mskmin/tree/umd
+[@stdlib/stats/base/mskmin]: https://github.com/stdlib-js/stats-base-mskmin/tree/umd/tree/umd
 
-[@stdlib/stats/base/smin]: https://github.com/stdlib-js/stats-base-smin/tree/umd
+[@stdlib/stats/base/smin]: https://github.com/stdlib-js/stats-base-smin/tree/umd/tree/umd
 
-[@stdlib/stats/base/smskmax]: https://github.com/stdlib-js/stats-base-smskmax/tree/umd
+[@stdlib/stats/base/smskmax]: https://github.com/stdlib-js/stats-base-smskmax/tree/umd/tree/umd
 
-[@stdlib/stats/base/snanmin]: https://github.com/stdlib-js/stats-base-snanmin/tree/umd
+[@stdlib/stats/base/snanmin]: https://github.com/stdlib-js/stats-base-snanmin/tree/umd/tree/umd
 
-[@stdlib/stats/base/snanmskmin]: https://github.com/stdlib-js/stats-base-snanmskmin/tree/umd
+[@stdlib/stats/base/snanmskmin]: https://github.com/stdlib-js/stats-base-snanmskmin/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
