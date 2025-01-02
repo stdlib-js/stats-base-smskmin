@@ -1,9 +1,9 @@
-"use strict";var q=function(i,a){return function(){return a||i((a={exports:{}}).exports,a),a.exports}};var x=q(function(F,l){
-var p=require('@stdlib/math-base-assert-is-nanf/dist'),_=require('@stdlib/math-base-assert-is-negative-zerof/dist');function E(i,a,t,m,o){var u,v,r,n,e;if(i<=0)return NaN;for(t<0?v=(1-i)*t:v=0,o<0?r=(1-i)*o:r=0,e=0;e<i&&m[r]!==0;e++)v+=t,r+=o;if(e===i)return NaN;if(u=a[v],p(u))return u;for(e+=1,e;e<i;e++)if(v+=t,r+=o,!m[r]){if(n=a[v],p(n))return n;(n<u||n===u&&_(n))&&(u=n)}return u}l.exports=E
-});var b=q(function(G,j){
-var y=require('@stdlib/math-base-assert-is-nanf/dist'),O=require('@stdlib/math-base-assert-is-negative-zerof/dist');function h(i,a,t,m,o,u,v){var r,n,e,s,f;if(i<=0)return NaN;for(n=m,e=v,f=0;f<i&&o[e]!==0;f++)n+=t,e+=u;if(f===i)return NaN;if(r=a[n],y(r))return r;for(f+=1,f;f<i;f++)if(n+=t,e+=u,!o[e]){if(s=a[n],y(s))return s;(s<r||s===r&&O(s))&&(r=s)}return r}j.exports=h
-});var R=q(function(H,N){
-var k=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),g=x(),w=b();k(g,"ndarray",w);N.exports=g
-});var z=require("path").join,A=require('@stdlib/utils-try-require/dist'),B=require('@stdlib/assert-is-error/dist'),C=R(),c,Z=A(z(__dirname,"./native.js"));B(Z)?c=C:c=Z;module.exports=c;
+"use strict";var q=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var c=q(function(F,y){
+var x=require('@stdlib/math-base-assert-is-nanf/dist'),g=require('@stdlib/math-base-assert-is-negative-zerof/dist');function E(r,e,u,o,t,f,m){var a,v,s,n,i;if(r<=0)return NaN;for(v=o,s=m,i=0;i<r&&t[s]!==0;i++)v+=u,s+=f;if(i===r)return NaN;if(a=e[v],x(a))return a;for(i+=1,i;i<r;i++)if(v+=u,s+=f,!t[s]){if(n=e[v],x(n))return n;(n<a||n===a&&g(n))&&(a=n)}return a}y.exports=E
+});var k=q(function(G,d){
+var j=require('@stdlib/strided-base-stride2offset/dist'),O=c();function Z(r,e,u,o,t){var f=j(r,u),m=j(r,t);return O(r,e,u,f,o,t,m)}d.exports=Z
+});var _=q(function(H,R){
+var h=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),l=k(),w=c();h(l,"ndarray",w);R.exports=l
+});var z=require("path").join,A=require('@stdlib/utils-try-require/dist'),B=require('@stdlib/assert-is-error/dist'),C=_(),p,b=A(z(__dirname,"./native.js"));B(b)?p=C:p=b;module.exports=p;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
